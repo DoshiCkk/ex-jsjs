@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/index.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="tabs">
+            <button class="tab-button active" id="today-tab">Today</button>
+            <button class="tab-button" id="forecast-tab">5-day forecast</button>
+        </div>
+
+        <div class="tab-content" id="today-content">
+            <div id="today-weather">
+                <div id="current-weather">
+                    <h3>Текущая погода</h3>
+                    <p id="date"></p>
+                    <p id="weather-icon"></p>
+                    <p id="temp"></p>
+                    <p id="feels-like"></p>
+                    <p id="sunrise-sunset"></p>
+                    <p id="day-duration"></p>
+                </div>
+                <div id="detailed-info">
+                    <h3>Детальная информация</h3>
+                    <div id="additional-info"></div>
+                </div>
+                <div id="city-temps">
+                    <h3>Температура в популярных городах</h3>
+                    <p id="city-1">Ташкент: <span id="temp-city-1"></span></p>
+                    <p id="city-2">Москва: <span id="temp-city-2"></span></p>
+                    <p id="city-3">Нью-Йорк: <span id="temp-city-3"></span></p>
+                    <p id="city-4">Лондон: <span id="temp-city-4"></span></p>
+                </div>
+                <div id="search-city">
+                    <input type="text" id="city-input" placeholder="Введите город" value="Tashkent">
+                    <button id="search-button">Поиск</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-content" id="forecast-content" style="display: none;">
+            <div id="five-day-forecast">
+                <h3>Прогноз на 5 дней</h3>
+                <div id="forecast-list"></div>
+            </div>
+        </div>
+
+    <script src="/index.js"></script>
+</body>
+</html>
